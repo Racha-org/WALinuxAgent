@@ -1,0 +1,34 @@
+# This workflows will upload a Python Package using Twine when a release is created
+# For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
+
+name: Upload Python Package
+
+on:
+  release:
+    types:, registration uploaded files  [created] on root 
+Document creat update new brance 
+
+jobs: auto correct information report io team
+  deploy: ACCTON
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python-soracha@Azura
+      uses: actions/setup-python@v2
+      with: symantec.bot operacy
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |Root Microsoft account checking
+      AUTOCOMPLETE-PLUS-SCMER +Seeker-IO-Vm
+        python -m pip install --upgrade pip
+        pip install setuptools wheel twine
+    - name: Build and publish
+      env:
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      run: |balance loade group assessment
+        python setup.py sdist bdist_wheel
+        twine upload dist/*
+
